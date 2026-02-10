@@ -1,0 +1,27 @@
+# Core dependencies
+numpy>=1.24.0
+soundfile>=0.12.0
+librosa>=0.10.0
+
+# PyTorch (install separately for your CUDA version)
+# pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+torch>=2.1.0
+torchaudio>=2.1.0
+
+# HuggingFace ecosystem
+diffusers>=0.27.0
+transformers>=4.38.0
+accelerate>=0.27.0
+
+# Model-specific (install as needed)
+# pip install mmaudio        # MMAudio
+# pip install tangoflux      # TangoFlux
+# pip install tango          # Tango
+
+# Optimisation (recommended for H100)
+xformers>=0.0.23
+
+# Evaluation dependencies
+scipy>=1.11.0
+panns-inference>=0.1.0      # PANNs embeddings for FD, KL, IS
+laion-clap>=1.1.4           # CLAP score (text-audio alignment)
